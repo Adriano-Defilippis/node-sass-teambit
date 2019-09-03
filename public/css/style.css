@@ -6,10 +6,20 @@ header div.wrapper_header nav {
   align-items: center;
 }
 
+footer,
 header div.wrapper_header {
   margin: 0 auto;
   width: 80%;
   padding: 20px 0;
+}
+
+footer .item_nav_footer li {
+  font-size: 0.9rem;
+  color: grey;
+  font-weight: lighter;
+}
+
+header div.wrapper_header {
   border-bottom: 2px solid lightgray;
 }
 
@@ -30,6 +40,57 @@ header div.wrapper_header nav ul a:hover {
   -webkit-text-stroke-color: blue;
 }
 
+footer {
+  font-size: 18px;
+  font-weight: bolder;
+  color: grey;
+}
+
+footer .wrapper_footer {
+  display: flex;
+  height: 80vh;
+  padding: 50px 0;
+}
+
+footer .footer_col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+footer .footer_col:first-child {
+  width: 35%;
+}
+
+footer .footer_col:first-child .figure {
+  display: flex;
+}
+
+footer .footer_col:last-child {
+  /* @extend %flexRow; */
+  width: 65%;
+}
+
+footer .row_footer {
+  /* @extend %flexRow; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer .smile_ico {
+  font-size: 45px;
+}
+
+footer .item_nav_footer {
+  margin-left: 10px;
+  width: calc(100% / 5);
+}
+
+footer .item_nav_footer li {
+  margin-top: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +105,7 @@ header div.wrapper_header nav ul a:hover {
 
 a {
   text-decoration: none;
+  color: grey;
 }
 
 .container {
