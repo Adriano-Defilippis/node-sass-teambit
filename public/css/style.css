@@ -48,7 +48,6 @@ footer {
 
 footer .wrapper_footer {
   display: flex;
-  height: 80vh;
   padding: 50px 0;
 }
 
@@ -88,7 +87,7 @@ footer .item_nav_footer {
 }
 
 footer .item_nav_footer li {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 * {
