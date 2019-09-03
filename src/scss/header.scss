@@ -1,0 +1,41 @@
+header{
+    
+    div.wrapper_header{
+        margin: 0 auto;
+        width: 80%;
+        
+        padding: 20px 0;
+
+        border-bottom: 2px solid lightgray;
+
+        nav{
+            @extend %flexRow;
+
+            a{
+                color: black;
+            }
+
+            a.logo_home{
+                
+                font-size: 24px;
+            }
+
+            ul{
+                @extend %flexRow;
+
+                width: 40%;
+
+                a{
+                 
+                    &:hover{
+                        -webkit-text-stroke-width: 1px; 
+                        -webkit-text-stroke-color:  blue; 
+                    }
+                }
+            }
+        }
+
+        
+        
+    }
+}
