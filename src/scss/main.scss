@@ -1,0 +1,64 @@
+main.content_page{
+
+    .wrapper_section{
+        width: 80vw;
+
+        margin: 0 auto;
+
+        padding: 150px 0;    
+    }
+
+    .wrapper_section::after,
+    section::after{
+        display: table;
+        content: "";
+        clear: both;    
+    }
+
+
+    #section_0{
+        
+        p{
+            font-weight: lighter;
+            font-size: $font_size_defoult;
+        }
+
+        height: calc(100vh - 68px);
+
+        figure img{
+            max-width:570px;
+            margin-bottom:70px
+        }
+
+        .col_left{
+            float: left;
+            width: 45%;
+    
+            header{
+                font-size: 2rem;
+
+                margin-bottom: 40px;
+                
+                h1{
+                    line-height: 2em;
+                }
+            }
+    
+            & > * {
+                margin-bottom: 40px;
+              }
+             
+        }
+    
+        .col_right{
+            float: right;
+        }
+
+        
+    }
+
+
+    
+    
+    
+}

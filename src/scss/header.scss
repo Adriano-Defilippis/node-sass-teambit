@@ -9,7 +9,7 @@ header{
             @extend %flexRow;
 
             a{
-                color: black;
+                color: $main_font_color;
             }
 
             a.logo_home{

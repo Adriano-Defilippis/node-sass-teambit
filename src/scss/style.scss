@@ -1,4 +1,6 @@
-$main_font_color: grey;
+$main_font_color: #58402c;
+$font_size_defoult: 22px;
+
 
 $width_small_col: 35%;
 $width_large_col: 65%;
@@ -35,6 +37,8 @@ $width_large_col: 65%;
 
 @import "header";
 @import "footer";
+@import "main";
+@import "forms";
 
 * {
   margin: 0;
@@ -45,6 +49,8 @@ $width_large_col: 65%;
 
   user-select: none;
   list-style: none;
+
+  color: $main_font_color;
 }
 
 a{
@@ -62,3 +68,12 @@ a{
   overflow: hidden;
 }
 
+
+
+/* HELPER CLASS */
+
+.after::after{
+  display: table;
+  content: "";
+  clear: both;
+}

@@ -15,7 +15,7 @@ header div.wrapper_header {
 
 footer .item_nav_footer li {
   font-size: 0.9rem;
-  color: grey;
+  color: #58402c;
   font-weight: lighter;
 }
 
@@ -24,7 +24,7 @@ header div.wrapper_header {
 }
 
 header div.wrapper_header nav a {
-  color: black;
+  color: #58402c;
 }
 
 header div.wrapper_header nav a.logo_home {
@@ -43,7 +43,7 @@ header div.wrapper_header nav ul a:hover {
 footer {
   font-size: 18px;
   font-weight: bolder;
-  color: grey;
+  color: #58402c;
 }
 
 footer .wrapper_footer {
@@ -90,6 +90,63 @@ footer .item_nav_footer li {
   margin-top: 20px;
 }
 
+main.content_page .wrapper_section {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+main.content_page .wrapper_section::after,
+main.content_page section::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+main.content_page #section_0 {
+  height: calc(100vh - 68px);
+}
+
+main.content_page #section_0 p {
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+main.content_page #section_0 figure img {
+  max-width: 570px;
+  margin-bottom: 70px;
+}
+
+main.content_page #section_0 .col_left {
+  float: left;
+  width: 45%;
+}
+
+main.content_page #section_0 .col_left header {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+main.content_page #section_0 .col_left header h1 {
+  line-height: 2em;
+}
+
+main.content_page #section_0 .col_left > * {
+  margin-bottom: 40px;
+}
+
+main.content_page #section_0 .col_right {
+  float: right;
+}
+
+form .button_signUp {
+  color: white;
+  background-color: #30488f;
+  padding: 10px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -100,11 +157,12 @@ footer .item_nav_footer li {
       -ms-user-select: none;
           user-select: none;
   list-style: none;
+  color: #58402c;
 }
 
 a {
   text-decoration: none;
-  color: grey;
+  color: #58402c;
 }
 
 .container {
@@ -112,5 +170,13 @@ a {
   height: 100%;
   /* padding: 50px 25px; */
   overflow: hidden;
+}
+
+/* HELPER CLASS */
+
+.after::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
