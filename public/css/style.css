@@ -6,10 +6,16 @@ header div.wrapper_header nav {
   align-items: center;
 }
 
+main.content_page #section_1 .wrapper_section .content_tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer,
 header div.wrapper_header {
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
   padding: 20px 0;
 }
 
@@ -38,6 +44,105 @@ header div.wrapper_header nav ul {
 header div.wrapper_header nav ul a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: blue;
+}
+
+main.content_page .wrapper_section {
+  width: 75vw;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+main.content_page .wrapper_section::after,
+main.content_page section::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+main.content_page #section_0 {
+  height: calc(100vh - 68px);
+}
+
+main.content_page #section_0 p {
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+main.content_page #section_0 figure img {
+  max-width: 570px;
+  margin-bottom: 70px;
+}
+
+main.content_page #section_0 form label {
+  margin: 10px;
+}
+
+main.content_page #section_0 form .button_sign_up {
+  color: white;
+  background-color: #30488f;
+  padding: 10px 20px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  font-weight: lighter;
+}
+
+main.content_page #section_0 form i {
+  color: white;
+}
+
+main.content_page #section_0 .col_left {
+  float: left;
+  width: 45%;
+}
+
+main.content_page #section_0 .col_left header {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+main.content_page #section_0 .col_left header h1 {
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+main.content_page #section_0 .col_left header p {
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+main.content_page #section_0 .col_left > * {
+  margin-bottom: 40px;
+}
+
+main.content_page #section_0 .col_right {
+  float: right;
+}
+
+main.content_page #section_1 {
+  background-color: #ffe7d2;
+}
+
+main.content_page #section_1 .wrapper_section {
+  text-align: center;
+}
+
+main.content_page #section_1 .wrapper_section .content_tab {
+  text-align: center;
+}
+
+main.content_page #section_1 .wrapper_section .content_tab figure {
+  width: calc(100% / 3 - 100px);
+}
+
+main.content_page #section_1 .wrapper_section .content_tab figure img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+main.content_page #section_1 .wrapper_section .content_tab .b_ico {
+  padding: 50px;
+  height: 220px;
 }
 
 footer {
@@ -90,63 +195,6 @@ footer .item_nav_footer li {
   margin-top: 20px;
 }
 
-main.content_page .wrapper_section {
-  width: 80vw;
-  margin: 0 auto;
-  padding: 150px 0;
-}
-
-main.content_page .wrapper_section::after,
-main.content_page section::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
-main.content_page #section_0 {
-  height: calc(100vh - 68px);
-}
-
-main.content_page #section_0 p {
-  font-weight: lighter;
-  font-size: 22px;
-}
-
-main.content_page #section_0 figure img {
-  max-width: 570px;
-  margin-bottom: 70px;
-}
-
-main.content_page #section_0 .col_left {
-  float: left;
-  width: 45%;
-}
-
-main.content_page #section_0 .col_left header {
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
-main.content_page #section_0 .col_left header h1 {
-  line-height: 2em;
-}
-
-main.content_page #section_0 .col_left > * {
-  margin-bottom: 40px;
-}
-
-main.content_page #section_0 .col_right {
-  float: right;
-}
-
-form .button_signUp {
-  color: white;
-  background-color: #30488f;
-  padding: 10px;
-  border: 1px solid lightblue;
-  border-radius: 10px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -170,6 +218,12 @@ a {
   height: 100%;
   /* padding: 50px 25px; */
   overflow: hidden;
+}
+
+hr {
+  background-color: #58402c;
+  margin: 100px 0;
+  height: 1px;
 }
 
 /* HELPER CLASS */

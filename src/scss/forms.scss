@@ -1,12 +1,22 @@
 form{
 
-    .button_signUp{
+    label{
+        margin: 10px;
+    }
+
+    .button_sign_up{
         color: white;
 
         background-color: #30488f;
 
-        padding: 10px;
+        padding: 10px 20px;
         border: 1px solid lightblue;
         border-radius: 10px;
+
+        font-weight: lighter;
+    }
+
+    i{
+        color: white;
     }
 }

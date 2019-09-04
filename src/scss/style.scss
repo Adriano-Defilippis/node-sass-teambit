@@ -5,6 +5,8 @@ $font_size_defoult: 22px;
 $width_small_col: 35%;
 $width_large_col: 65%;
 
+$bg_section: #ffe7d2;
+
 %flexRow {
   display: flex;
   flex-direction: row;
@@ -22,7 +24,7 @@ $width_large_col: 65%;
 
 %sizing_position_Header_footer{
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
         
   padding: 20px 0;
 };
@@ -36,9 +38,11 @@ $width_large_col: 65%;
 
 
 @import "header";
-@import "footer";
 @import "main";
-@import "forms";
+
+@import "footer";
+
+
 
 * {
   margin: 0;
@@ -68,7 +72,12 @@ a{
   overflow: hidden;
 }
 
+hr{
+  background-color:  $main_font_color;
+  margin: 100px 0;
 
+  height: 1px;
+}
 
 /* HELPER CLASS */
 
