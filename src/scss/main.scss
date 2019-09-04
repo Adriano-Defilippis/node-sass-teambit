@@ -1,12 +1,38 @@
 main.content_page{
 
+    hr{
+        @extend %sizing_position_Header_footer;
+
+        padding: 0;
+
+        color: lightgrey;
+    }
+
+    section{
+        &::after{
+            display: table;
+            content: "";
+            clear: both;
+        }
+    }
+
     .wrapper_section{
         width: 75vw;
 
         margin: 40px auto;
 
-        padding: 60px 0;    
+        padding: 60px 0;
+        
+        &::after{
+            .wrapper_section{
+                display: table;
+                content: "";
+                clear: both; 
+            }
+        }
     }
+
+
 
     .col_right{
         float: right;
@@ -34,7 +60,7 @@ main.content_page{
 
     section.page_section{
 
-        height: $heigth_section_menoheader;
+        /* height: $heigth_section_menoheader; */
 
         .wrapper_section{
             width: 100vw;
@@ -257,6 +283,12 @@ main.content_page{
 
         .b_quote_cit{
             text-align: initial;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1.5rem;
+            padding: 5px;
 
             .b_quote_name{
                 color: blue;

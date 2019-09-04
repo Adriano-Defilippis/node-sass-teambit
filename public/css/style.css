@@ -14,6 +14,7 @@ main.content_page #section_6 .wrapper_section .content_tab {
 }
 
 footer,
+main.content_page hr,
 header div.wrapper_header {
   margin: 0 auto;
   width: 75%;
@@ -47,10 +48,27 @@ header div.wrapper_header nav ul a:hover {
   -webkit-text-stroke-color: blue;
 }
 
+main.content_page hr {
+  padding: 0;
+  color: lightgrey;
+}
+
+main.content_page section::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
 main.content_page .wrapper_section {
   width: 75vw;
   margin: 40px auto;
   padding: 60px 0;
+}
+
+main.content_page .wrapper_section::after .wrapper_section {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 main.content_page .col_right {
@@ -73,7 +91,7 @@ main.content_page .figure_textbox p {
 }
 
 main.content_page section.page_section {
-  height: calc(100vh - 68px);
+  /* height: $heigth_section_menoheader; */
 }
 
 main.content_page section.page_section .wrapper_section {
@@ -302,6 +320,11 @@ main.content_page .b_quote_autor .b_quote_photo img {
 
 main.content_page .b_quote_autor .b_quote_cit {
   text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5rem;
+  padding: 5px;
 }
 
 main.content_page .b_quote_autor .b_quote_cit .b_quote_name {
