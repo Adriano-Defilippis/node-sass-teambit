@@ -52,6 +52,14 @@ main.content_page .wrapper_section {
   padding: 60px 0;
 }
 
+main.content_page .col_right {
+  float: right;
+}
+
+main.content_page .col_left {
+  float: left;
+}
+
 main.content_page .wrapper_section::after,
 main.content_page section::after {
   display: table;
@@ -61,6 +69,51 @@ main.content_page section::after {
 
 main.content_page .figure_textbox p {
   font-size: 1.125rem;
+}
+
+main.content_page section.page_section {
+  height: calc(100vh - 68px);
+}
+
+main.content_page section.page_section .wrapper_section {
+  width: 100vw;
+  margin: 40px auto;
+  padding: 60px 0;
+}
+
+main.content_page section.page_section .col {
+  width: 50%;
+  /* .wrapper_grid{
+      width: 60%;
+  } */
+}
+
+main.content_page section.page_section .col .wrapper_grid {
+  width: 60%;
+}
+
+main.content_page section.page_section .col .wrapper_grid img {
+  max-width: 80%;
+  padding: 50px;
+}
+
+main.content_page section.page_section .col header {
+  font-size: 1.3rem;
+}
+
+main.content_page section.page_section .col header h1 {
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+main.content_page section.page_section .col header p {
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+main.content_page section.page_section .col img {
+  max-width: 100%;
+  background-size: cover;
 }
 
 main.content_page #section_0 {
@@ -95,7 +148,6 @@ main.content_page #section_0 form i {
 }
 
 main.content_page #section_0 .col_left {
-  float: left;
   width: 45%;
 }
 
@@ -116,10 +168,6 @@ main.content_page #section_0 .col_left header p {
 
 main.content_page #section_0 .col_left > * {
   margin-bottom: 40px;
-}
-
-main.content_page #section_0 .col_right {
-  float: right;
 }
 
 main.content_page #section_1 {
@@ -181,6 +229,7 @@ footer {
 footer .wrapper_footer {
   display: flex;
   padding: 50px 0;
+  width: 100%;
 }
 
 footer .footer_col {

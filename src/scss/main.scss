@@ -8,6 +8,14 @@ main.content_page{
         padding: 60px 0;    
     }
 
+    .col_right{
+        float: right;
+    }
+
+    .col_left{
+        float: left;
+    }
+
     
     .wrapper_section::after,
     section::after{
@@ -24,6 +32,62 @@ main.content_page{
         }
     }
 
+    section.page_section{
+
+        height: $heigth_section_menoheader;
+
+        .wrapper_section{
+            width: 100vw;
+    
+            margin: 40px auto;
+    
+            padding: 60px 0;    
+        }
+    
+
+        .col{
+            width: 50%;
+            
+            /* .wrapper_grid{
+                width: 60%;
+            } */
+
+            .wrapper_grid{
+                width: 60%;
+
+                img{
+                    max-width: 80%;
+                    
+                    padding: 50px;
+                }
+            }
+
+            header{
+                font-size: 1.3rem;
+                
+                h1{
+                    line-height: 1.6em;
+                   margin-bottom: 20px;
+                }
+
+                p{
+                    line-height: 1.6em;
+                   margin-bottom: 20px;
+                }
+            }
+
+            img{
+                max-width: 100%;
+                background-size: cover;
+
+            }
+        }
+
+
+
+    }
+
+
     #section_0{
         
 
@@ -32,7 +96,7 @@ main.content_page{
             font-size: $font_size_defoult;
         }
 
-        height: calc(100vh - 68px);
+        height: $heigth_section_menoheader;
 
         figure img{
             max-width:570px;
@@ -42,7 +106,7 @@ main.content_page{
         @import "forms";
       
         .col_left{
-            float: left;
+            
             width: 45%;
     
             header{
@@ -67,10 +131,6 @@ main.content_page{
              
         }
     
-        .col_right{
-            float: right;
-        }
-
         
     }
 
