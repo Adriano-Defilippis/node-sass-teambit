@@ -134,10 +134,27 @@ main.content_page{
         
     }
 
-    #section_1{
+    #section_1,
+    #section_6{
+
+        @import "forms";
 
         background-color: $bg_section;
         
+        header{
+            font-size: 1.3rem;
+            
+            h1{
+                line-height: 1.6em;
+               margin-bottom: 20px;
+            }
+
+            p{
+                line-height: 1.6em;
+               margin-bottom: 20px;
+            }
+        }
+
         .wrapper_section{
 
             text-align: center;
@@ -206,6 +223,45 @@ main.content_page{
         }
     }
     
-    
+    blockquote.b_quote{
+        width: 50%;
+
+        
+
+        text-align: justify;
+
+        padding: 50px;
+        margin: 25px auto;
+
+        margin-bottom: 50px;
+
+        background-color: white;
+
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+    }
+
+    .b_quote_autor{
+        display: flex;
+
+        .b_quote_photo{
+            width: 25%;
+
+            img{
+                width: 40%;
+                border-radius: 50%;
+
+                margin: 5px;
+            }
+        }
+
+        .b_quote_cit{
+            text-align: initial;
+
+            .b_quote_name{
+                color: blue;
+            }
+        }
+    }
     
 }

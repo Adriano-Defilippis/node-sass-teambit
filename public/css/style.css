@@ -6,7 +6,8 @@ header div.wrapper_header nav {
   align-items: center;
 }
 
-main.content_page #section_1 .wrapper_section .content_tab {
+main.content_page #section_1 .wrapper_section .content_tab,
+main.content_page #section_6 .wrapper_section .content_tab {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,6 +148,10 @@ main.content_page #section_0 form i {
   color: white;
 }
 
+main.content_page #section_0 form .another_log_in {
+  margin-top: 25px;
+}
+
 main.content_page #section_0 .col_left {
   width: 45%;
 }
@@ -170,38 +175,87 @@ main.content_page #section_0 .col_left > * {
   margin-bottom: 40px;
 }
 
-main.content_page #section_1 {
+main.content_page #section_1,
+main.content_page #section_6 {
   background-color: #ffe7d2;
 }
 
-main.content_page #section_1 .wrapper_section {
+main.content_page #section_1 form label,
+main.content_page #section_6 form label {
+  margin: 10px;
+}
+
+main.content_page #section_1 form .button_sign_up,
+main.content_page #section_6 form .button_sign_up {
+  color: white;
+  background-color: #30488f;
+  padding: 10px 20px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  font-weight: lighter;
+}
+
+main.content_page #section_1 form i,
+main.content_page #section_6 form i {
+  color: white;
+}
+
+main.content_page #section_1 form .another_log_in,
+main.content_page #section_6 form .another_log_in {
+  margin-top: 25px;
+}
+
+main.content_page #section_1 header,
+main.content_page #section_6 header {
+  font-size: 1.3rem;
+}
+
+main.content_page #section_1 header h1,
+main.content_page #section_6 header h1 {
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+main.content_page #section_1 header p,
+main.content_page #section_6 header p {
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+main.content_page #section_1 .wrapper_section,
+main.content_page #section_6 .wrapper_section {
   text-align: center;
 }
 
-main.content_page #section_1 .wrapper_section h2 {
+main.content_page #section_1 .wrapper_section h2,
+main.content_page #section_6 .wrapper_section h2 {
   width: 50%;
   margin: 0 auto;
 }
 
-main.content_page #section_1 .wrapper_section .content_tab {
+main.content_page #section_1 .wrapper_section .content_tab,
+main.content_page #section_6 .wrapper_section .content_tab {
   width: 80%;
   margin: 0 auto;
   justify-content: space-around;
   text-align: center;
 }
 
-main.content_page #section_1 .wrapper_section .content_tab figure {
+main.content_page #section_1 .wrapper_section .content_tab figure,
+main.content_page #section_6 .wrapper_section .content_tab figure {
   width: calc(100% / 3 - 75px);
   margin-bottom: 75px;
 }
 
-main.content_page #section_1 .wrapper_section .content_tab figure img {
+main.content_page #section_1 .wrapper_section .content_tab figure img,
+main.content_page #section_6 .wrapper_section .content_tab figure img {
   max-width: 100%;
   height: auto;
   background-size: cover;
 }
 
-main.content_page #section_1 .wrapper_section .content_tab figure.single_figurcol {
+main.content_page #section_1 .wrapper_section .content_tab figure.single_figurcol,
+main.content_page #section_6 .wrapper_section .content_tab figure.single_figurcol {
   width: calc(100% / 3);
   position: relative;
   display: flex;
@@ -209,7 +263,8 @@ main.content_page #section_1 .wrapper_section .content_tab figure.single_figurco
   justify-content: flex-end;
 }
 
-main.content_page #section_1 .wrapper_section .content_tab .b_ico {
+main.content_page #section_1 .wrapper_section .content_tab .b_ico,
+main.content_page #section_6 .wrapper_section .content_tab .b_ico {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -218,6 +273,39 @@ main.content_page #section_1 .wrapper_section .content_tab .b_ico {
   padding: 25px;
   height: 220px;
   text-align: center;
+}
+
+main.content_page blockquote.b_quote {
+  width: 50%;
+  text-align: justify;
+  padding: 50px;
+  margin: 25px auto;
+  margin-bottom: 50px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+main.content_page .b_quote_autor {
+  display: flex;
+}
+
+main.content_page .b_quote_autor .b_quote_photo {
+  width: 25%;
+}
+
+main.content_page .b_quote_autor .b_quote_photo img {
+  width: 40%;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+main.content_page .b_quote_autor .b_quote_cit {
+  text-align: initial;
+}
+
+main.content_page .b_quote_autor .b_quote_cit .b_quote_name {
+  color: blue;
 }
 
 footer {
