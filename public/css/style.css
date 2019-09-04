@@ -85,6 +85,17 @@ header div.wrapper_header nav .sign_up {
   font-weight: bold;
 }
 
+.hidden_header {
+  background: white;
+  display: none;
+  border-bottom: 2px solid lightgray;
+}
+
+.hidden_header div.wrapper_header {
+  border-bottom: none;
+  padding: 10px 0;
+}
+
 main.content_page hr {
   padding: 0;
   color: lightgrey;
@@ -474,5 +485,17 @@ hr {
 
 .relative {
   position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.block {
+  display: block;
+  z-index: 5;
 }
 
