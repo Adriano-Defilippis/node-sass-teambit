@@ -1,4 +1,4 @@
-header div.wrapper_header nav ul,
+header div.wrapper_header nav ul.menu_header,
 header div.wrapper_header nav {
   display: flex;
   flex-direction: row;
@@ -39,13 +39,50 @@ header div.wrapper_header nav a.logo_home {
   font-size: 24px;
 }
 
-header div.wrapper_header nav ul {
+header div.wrapper_header nav ul.menu_header {
   width: 40%;
 }
 
-header div.wrapper_header nav ul a:hover {
+header div.wrapper_header nav ul.menu_header li:first-child:hover .nav_drop_down {
+  display: block;
+}
+
+header div.wrapper_header nav ul.menu_header a:hover {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: blue;
+  -webkit-text-stroke-color: #30488f;
+}
+
+header div.wrapper_header nav ul.menu_header nav.nav_drop_down {
+  position: absolute;
+  left: -25%;
+  top: 20px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  display: none;
+}
+
+header div.wrapper_header nav ul.menu_header nav.nav_drop_down ul {
+  padding: 0 25px;
+}
+
+header div.wrapper_header nav ul.menu_header nav.nav_drop_down ul li {
+  margin: 20px 0;
+}
+
+header div.wrapper_header nav ul.menu_header nav.nav_drop_down ul li:first-child,
+header div.wrapper_header nav ul.menu_header nav.nav_drop_down ul li:last-child {
+  margin: 5px 0;
+}
+
+header div.wrapper_header nav .sign_up {
+  color: #30488f;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #30488f;
+  border-radius: 10px;
+  font-weight: lighter;
+  font-weight: bold;
 }
 
 main.content_page hr {
@@ -293,6 +330,18 @@ main.content_page #section_6 .wrapper_section .content_tab .b_ico {
   text-align: center;
 }
 
+main.content_page #section_1 .another_log_in a i,
+main.content_page #section_6 .another_log_in a i {
+  color: 22px;
+  margin-left: 10px;
+}
+
+main.content_page #section_1 .another_log_in a:hover,
+main.content_page #section_6 .another_log_in a:hover {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #30488f;
+}
+
 main.content_page blockquote.b_quote {
   width: 50%;
   text-align: justify;
@@ -354,6 +403,7 @@ footer .footer_col:first-child {
 }
 
 footer .footer_col:first-child .figure {
+  width: 90%;
   display: flex;
 }
 
@@ -371,6 +421,7 @@ footer .row_footer {
 
 footer .smile_ico {
   font-size: 45px;
+  margin-right: 20px;
 }
 
 footer .item_nav_footer {
@@ -419,5 +470,9 @@ hr {
   display: table;
   content: "";
   clear: both;
+}
+
+.relative {
+  position: relative;
 }
 

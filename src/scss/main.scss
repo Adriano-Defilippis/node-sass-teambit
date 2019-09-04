@@ -247,6 +247,21 @@ main.content_page{
                 }
             }
         }
+
+        .another_log_in{
+
+            a{
+                i{  
+                    color: $font_size_defoult;
+                    margin-left: 10px;
+                }
+
+                &:hover{
+                    -webkit-text-stroke-width: 1px; 
+                    -webkit-text-stroke-color:  #30488f; 
+                }
+            }
+        }
     }
     
     blockquote.b_quote{

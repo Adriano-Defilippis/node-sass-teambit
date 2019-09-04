@@ -17,18 +17,69 @@ header{
                 font-size: 24px;
             }
 
-            ul{
+            ul.menu_header{
                 @extend %flexRow;
 
                 width: 40%;
+
+                li:first-child{
+                    
+                    &:hover .nav_drop_down{
+                        display: block;
+                    
+                    }
+                }
 
                 a{
                  
                     &:hover{
                         -webkit-text-stroke-width: 1px; 
-                        -webkit-text-stroke-color:  blue; 
+                        -webkit-text-stroke-color:  #30488f; 
                     }
                 }
+
+                nav.nav_drop_down{
+                    position: absolute;
+                    left: -25%;
+                    top: 20px;
+
+                    background-color: white;
+
+                    border: 1px solid lightgrey;
+                    border-radius: 10px;
+
+                    display: none;
+                    
+
+                    ul{
+                        padding: 0 25px;
+                        
+                        li{
+                            margin: 20px 0;
+
+                            &:first-child,
+                            &:last-child{
+                                margin: 5px 0;
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+            
+            .sign_up{
+                color: #30488f;
+        
+                background-color: white;
+        
+                padding: 10px;
+                border: 1px solid #30488f;
+                border-radius: 10px;
+        
+                font-weight: lighter;
+
+                font-weight: bold;
             }
         }
 

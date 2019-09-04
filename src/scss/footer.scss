@@ -26,6 +26,8 @@ footer{
         width: $width_small_col;
 
         .figure{
+            width: 90%;
+
             display: flex;
         }
     }
@@ -53,6 +55,7 @@ footer{
 
     .smile_ico{
         font-size: 45px;
+        margin-right: 20px;
       
     }
 
