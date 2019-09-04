@@ -449,10 +449,6 @@ footer .item_nav_footer li {
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   list-style: none;
   color: #58402c;
 }
