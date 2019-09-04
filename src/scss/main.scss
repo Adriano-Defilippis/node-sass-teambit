@@ -15,6 +15,13 @@ main.content_page{
         clear: both;    
     }
 
+    .figure_textbox {
+                        
+        p{
+            font-size: 1.125rem;
+            
+        }
+    }
 
     #section_0{
         
@@ -71,30 +78,44 @@ main.content_page{
         background-color: $bg_section;
         
         .wrapper_section{
-    
-           
 
             text-align: center;
             
+            h2{
+                width: 50%;
+                margin: 0 auto;
+            }
+
             .content_tab{
 
                 @extend %flex_center_ondiv;
 
+                width: 80%;
+                margin: 10px auto;
+
+                justify-content: space-around;
+
                 text-align: center;
 
-                figure{
-                    width: calc(100% / 3 - 100px);
+                
 
-                                        
+                figure{
+                    width: calc(100% / 3 - 75px);
+                    
+                    margin-bottom: 75px;
 
                     img{
                         width: 100%; 
                         height: 100%;
                         background-size: cover;
-
                         
                     }
                 }
+
+                figure.single_figurcol{
+                    width: calc(100% / 3);
+                }
+
 
                 .b_ico{
                    padding: 50px;
